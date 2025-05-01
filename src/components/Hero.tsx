@@ -1,6 +1,7 @@
 
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Countdown from '@/components/Countdown';
 
 const Hero = () => {
   return (
@@ -8,30 +9,28 @@ const Hero = () => {
       id="home" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&q=80")',
+        backgroundImage: 'linear-gradient(rgba(73, 34, 89, 0.8), rgba(73, 34, 89, 0.8)), url("https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&q=80")',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
     >
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full">
-            <span className="text-white font-medium text-sm md:text-base">
-              Barranquilla, Colombia | 8-11 Julio 2025
-            </span>
-          </div>
-          
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in">
             Foro de Desarrollo Local de la OCDE
           </h1>
+          
+          <div className="mb-6 text-white/90 text-lg md:text-xl font-medium">
+            Barranquilla, Colombia | 8-11 Julio 2025
+          </div>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-up">
             El evento internacional que reúne a líderes para impulsar el desarrollo local sostenible
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-barranquilla-red hover:bg-barranquilla-red/90">
-              Registro
+            <Button size="lg" className="bg-custom-orange hover:bg-custom-orange/90 text-white">
+              Regístrate al Evento Aquí
             </Button>
             <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10" asChild>
               <a href="#about" className="group">
@@ -41,18 +40,8 @@ const Hero = () => {
             </Button>
           </div>
           
-          <div className="flex justify-center mt-16">
-            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg flex gap-4 items-center">
-              <div className="text-center">
-                <p className="text-white text-sm">Organiza</p>
-                <p className="text-white font-bold">Alcaldía de Barranquilla</p>
-              </div>
-              <div className="h-8 w-px bg-white/30"></div>
-              <div className="text-center">
-                <p className="text-white text-sm">En colaboración con</p>
-                <p className="text-white font-bold">OCDE</p>
-              </div>
-            </div>
+          <div className="mt-10">
+            <Countdown targetDate="2025-07-08T09:00:00" />
           </div>
         </div>
       </div>

@@ -63,11 +63,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Barranquilla colors
-				barranquilla: {
-					blue: '#0033A0',
-					red: '#E51937',
-					yellow: '#F7CE00',
+				// Nueva paleta de colores personalizada
+				custom: {
+					pink: '#D98BA7',
+					purple: '#A658A1',
+					darkPurple: '#492259',
+					orange: '#F2A03D',
+					coral: '#D99A9A',
+					white: '#FFFFFF',
+					black: '#000000',
+					gray: '#9E9E9E',
 				}
 			},
 			borderRadius: {

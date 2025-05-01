@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Calendar, Info, Users, FileText, MapPin, Mail, Pencil } from 'lucide-react';
+import { Menu, X, Calendar, Info, Users, MapPin, Mail, Pencil, Home, Image } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const NavBar = () => {
@@ -26,6 +26,7 @@ const NavBar = () => {
     { name: "Programa", href: "#agenda", icon: <Calendar className="h-5 w-5" /> },
     { name: "Ponentes", href: "#speakers", icon: <Users className="h-5 w-5" /> },
     { name: "Información Práctica", href: "#venue", icon: <MapPin className="h-5 w-5" /> },
+    { name: "Galería", href: "#media", icon: <Image className="h-5 w-5" /> },
     { name: "Registro", href: "#registration", icon: <Pencil className="h-5 w-5" /> },
     { name: "Contacto", href: "#contact", icon: <Mail className="h-5 w-5" /> }
   ];
@@ -36,7 +37,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="#" className="flex items-center space-x-2">
-              <span className={`text-xl font-bold ${isScrolled ? 'text-barranquilla-blue' : 'text-white'}`}>
+              <span className={`text-xl font-bold ${isScrolled ? 'text-custom-darkPurple' : 'text-white'}`}>
                 OCDE 2025
               </span>
             </a>
@@ -48,15 +49,15 @@ const NavBar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors hover:bg-barranquilla-blue/10 ${
-                  isScrolled ? 'text-gray-700 hover:text-barranquilla-blue' : 'text-white hover:text-barranquilla-yellow'
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors hover:bg-custom-purple/10 ${
+                  isScrolled ? 'text-gray-700 hover:text-custom-purple' : 'text-white hover:text-custom-orange'
                 }`}
               >
                 {item.name}
               </a>
             ))}
-            <Button className="ml-4 bg-barranquilla-red hover:bg-barranquilla-red/90 text-white">
-              Registro
+            <Button className="ml-4 bg-custom-orange hover:bg-custom-orange/90 text-white">
+              Regístrate Ahora
             </Button>
           </nav>
 
@@ -85,15 +86,15 @@ const NavBar = () => {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center gap-2 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-barranquilla-blue/10 hover:text-barranquilla-blue"
+                className="flex items-center gap-2 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-custom-purple/10 hover:text-custom-purple"
               >
                 {item.icon}
                 {item.name}
               </a>
             ))}
             <div className="px-3 py-2">
-              <Button className="w-full bg-barranquilla-red hover:bg-barranquilla-red/90 text-white">
-                Registro
+              <Button className="w-full bg-custom-orange hover:bg-custom-orange/90 text-white">
+                Regístrate Ahora
               </Button>
             </div>
           </div>
@@ -102,8 +103,5 @@ const NavBar = () => {
     </header>
   );
 };
-
-// Fix: Import the missing Home icon
-import { Home } from 'lucide-react';
 
 export default NavBar;

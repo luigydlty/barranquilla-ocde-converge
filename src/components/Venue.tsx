@@ -7,7 +7,7 @@ const Venue = () => {
     <section id="venue" className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-barranquilla-blue">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-custom-purple">
             Información Práctica
           </h2>
           <p className="text-gray-600">
@@ -17,19 +17,19 @@ const Venue = () => {
 
         <Tabs defaultValue="venue" className="max-w-4xl mx-auto">
           <TabsList className="grid grid-cols-3 mb-8">
-            <TabsTrigger value="venue" className="data-[state=active]:bg-barranquilla-blue data-[state=active]:text-white">
+            <TabsTrigger value="venue" className="data-[state=active]:bg-custom-purple data-[state=active]:text-white">
               <div className="flex flex-col items-center gap-1">
                 <MapPin className="h-4 w-4" />
                 <span>Sedes</span>
               </div>
             </TabsTrigger>
-            <TabsTrigger value="accommodation" className="data-[state=active]:bg-barranquilla-blue data-[state=active]:text-white">
+            <TabsTrigger value="accommodation" className="data-[state=active]:bg-custom-purple data-[state=active]:text-white">
               <div className="flex flex-col items-center gap-1">
                 <Hotel className="h-4 w-4" />
                 <span>Alojamiento</span>
               </div>
             </TabsTrigger>
-            <TabsTrigger value="transport" className="data-[state=active]:bg-barranquilla-blue data-[state=active]:text-white">
+            <TabsTrigger value="transport" className="data-[state=active]:bg-custom-purple data-[state=active]:text-white">
               <div className="flex flex-col items-center gap-1">
                 <Airplay className="h-4 w-4" />
                 <span>Transporte</span>
@@ -39,25 +39,25 @@ const Venue = () => {
           
           <TabsContent value="venue" className="mt-0">
             <div className="bg-gray-50 rounded-lg shadow-sm p-6">
-              <h3 className="text-xl font-semibold mb-4 text-barranquilla-blue">
+              <h3 className="text-xl font-semibold mb-4 text-custom-purple">
                 Sedes del Evento
               </h3>
               
               <div className="space-y-8">
                 <div className="bg-white p-5 rounded-lg shadow-sm">
                   <div className="flex flex-col md:flex-row gap-6">
-                    <div className="md:w-1/3 bg-gray-200 rounded-lg h-48 flex items-center justify-center">
-                      <MapPin className="h-10 w-10 text-gray-400" />
+                    <div className="md:w-1/3 bg-custom-purple/10 rounded-lg h-48 flex items-center justify-center">
+                      <MapPin className="h-10 w-10 text-custom-purple" />
                     </div>
                     <div className="md:w-2/3">
                       <h4 className="font-bold text-lg mb-2">Puerta de Oro - Centro de Eventos</h4>
                       <p className="text-gray-500 mb-4">Sede principal de todas las sesiones plenarias, talleres y exhibiciones.</p>
                       <div className="flex items-start gap-2">
-                        <MapPin className="h-5 w-5 text-barranquilla-red mt-0.5" />
+                        <MapPin className="h-5 w-5 text-custom-orange mt-0.5" />
                         <span>Vía 40 # 79B-06, Riomar, Barranquilla</span>
                       </div>
                       <div className="flex items-center gap-2 mt-2">
-                        <Phone className="h-5 w-5 text-barranquilla-red" />
+                        <Phone className="h-5 w-5 text-custom-orange" />
                         <span>+57 5 3096633</span>
                       </div>
                     </div>
@@ -66,14 +66,14 @@ const Venue = () => {
                 
                 <div className="bg-white p-5 rounded-lg shadow-sm">
                   <div className="flex flex-col md:flex-row gap-6">
-                    <div className="md:w-1/3 bg-gray-200 rounded-lg h-48 flex items-center justify-center">
-                      <MapPin className="h-10 w-10 text-gray-400" />
+                    <div className="md:w-1/3 bg-custom-purple/10 rounded-lg h-48 flex items-center justify-center">
+                      <MapPin className="h-10 w-10 text-custom-purple" />
                     </div>
                     <div className="md:w-2/3">
                       <h4 className="font-bold text-lg mb-2">Pabellón de Cristal</h4>
                       <p className="text-gray-500 mb-4">Sede de la cena de conferencia el 10 de julio.</p>
                       <div className="flex items-start gap-2">
-                        <MapPin className="h-5 w-5 text-barranquilla-red mt-0.5" />
+                        <MapPin className="h-5 w-5 text-custom-orange mt-0.5" />
                         <span>Dirección por confirmar</span>
                       </div>
                     </div>
@@ -85,7 +85,7 @@ const Venue = () => {
           
           <TabsContent value="accommodation" className="mt-0">
             <div className="bg-gray-50 rounded-lg shadow-sm p-6">
-              <h3 className="text-xl font-semibold mb-4 text-barranquilla-blue">
+              <h3 className="text-xl font-semibold mb-4 text-custom-purple">
                 Sugerencias de Alojamiento
               </h3>
               
@@ -94,19 +94,19 @@ const Venue = () => {
                   <h4 className="font-bold text-lg mb-3">Hotel Movich</h4>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
-                      <div className="bg-barranquilla-blue/10 p-1 rounded text-barranquilla-blue font-medium text-sm">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
                         Código de bloqueo
                       </div>
                       <span className="mt-0.5">OCDE 2025</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="bg-barranquilla-blue/10 p-1 rounded text-barranquilla-blue font-medium text-sm">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
                         Contacto
                       </div>
                       <span className="mt-0.5">reservas.barranquilla@movichhotels.com / WhatsApp: +57 310 123 4567</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="bg-barranquilla-blue/10 p-1 rounded text-barranquilla-blue font-medium text-sm">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
                         Precios
                       </div>
                       <span className="mt-0.5">Desde $200 USD (sin IVA para extranjeros)</span>
@@ -118,19 +118,19 @@ const Venue = () => {
                   <h4 className="font-bold text-lg mb-3">Hotel Crowne</h4>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
-                      <div className="bg-barranquilla-blue/10 p-1 rounded text-barranquilla-blue font-medium text-sm">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
                         Código de bloqueo
                       </div>
                       <span className="mt-0.5">OCDE 2025</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="bg-barranquilla-blue/10 p-1 rounded text-barranquilla-blue font-medium text-sm">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
                         Contacto
                       </div>
                       <span className="mt-0.5">reservas.barranquilla@ihg.com / WhatsApp: +57 310 987 6543</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="bg-barranquilla-blue/10 p-1 rounded text-barranquilla-blue font-medium text-sm">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
                         Precios
                       </div>
                       <span className="mt-0.5">Desde $180 USD (sin IVA para extranjeros)</span>
@@ -138,7 +138,7 @@ const Venue = () => {
                   </ul>
                 </div>
                 
-                <div className="bg-barranquilla-yellow/10 p-4 rounded-lg border border-barranquilla-yellow/20 mt-4">
+                <div className="bg-custom-orange/10 p-4 rounded-lg border border-custom-orange/20 mt-4">
                   <p className="text-sm text-gray-600">
                     <strong>Nota importante:</strong> La disponibilidad de habitaciones no está garantizada y puede ser 
                     limitada cerca de la fecha del evento. Recomendamos realizar su reserva con anticipación.
@@ -150,7 +150,7 @@ const Venue = () => {
           
           <TabsContent value="transport" className="mt-0">
             <div className="bg-gray-50 rounded-lg shadow-sm p-6">
-              <h3 className="text-xl font-semibold mb-4 text-barranquilla-blue">
+              <h3 className="text-xl font-semibold mb-4 text-custom-purple">
                 Información de Transporte
               </h3>
               
@@ -184,7 +184,7 @@ const Venue = () => {
                   </div>
                 </div>
                 
-                <div className="bg-barranquilla-blue/10 p-4 rounded-lg">
+                <div className="bg-custom-purple/10 p-4 rounded-lg">
                   <p className="text-sm text-gray-600">
                     Se proporcionará información más detallada sobre opciones de transporte a los participantes registrados 
                     a medida que se acerque la fecha del evento.

@@ -8,11 +8,19 @@ const Registration = () => {
       <div 
         className="absolute inset-0 z-0" 
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 51, 160, 0.9), rgba(0, 51, 160, 0.8)), url("https://images.unsplash.com/photo-1469041797191-50ace28483c3?auto=format&fit=crop&q=80")',
+          backgroundImage: 'linear-gradient(rgba(166, 88, 161, 0.9), rgba(166, 88, 161, 0.8))',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       />
+      
+      <div className="absolute inset-0 z-0 opacity-20">
+        <img 
+          src="/lovable-uploads/fedc6e21-dd9b-45fb-bb0c-847feb94796e.png" 
+          alt="Vista aérea de Barranquilla" 
+          className="w-full h-full object-cover" 
+        />
+      </div>
       
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -55,18 +63,18 @@ const Registration = () => {
               </p>
             </div>
             
-            <Button className="bg-barranquilla-red hover:bg-barranquilla-red/90 text-white">
+            <Button className="bg-custom-orange hover:bg-custom-orange/90 text-white">
               Pre-registro / Expresar interés
             </Button>
           </div>
           
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold mb-6 text-barranquilla-blue">Información de Registro</h3>
+            <h3 className="text-xl font-bold mb-6 text-custom-purple">Información de Registro</h3>
             
             <div className="space-y-6">
               <div>
                 <h4 className="font-semibold mb-2">Modalidades de Participación</h4>
-                <div className="border-l-4 border-barranquilla-blue pl-3 py-1">
+                <div className="border-l-4 border-custom-orange pl-3 py-1">
                   <p className="text-gray-600">
                     El foro ofrece diferentes opciones de participación adaptadas a las necesidades de 
                     los asistentes, incluyendo acceso a todas las sesiones o solo a eventos específicos.
@@ -76,7 +84,7 @@ const Registration = () => {
               
               <div>
                 <h4 className="font-semibold mb-2">Tarifas de Inscripción</h4>
-                <div className="border-l-4 border-barranquilla-blue pl-3 py-1">
+                <div className="border-l-4 border-custom-orange pl-3 py-1">
                   <p className="text-gray-600">
                     Las tarifas varían según el tipo de participante (representantes gubernamentales, 
                     académicos, sector privado) y serán publicadas próximamente.
@@ -86,7 +94,7 @@ const Registration = () => {
               
               <div>
                 <h4 className="font-semibold mb-2">Delegaciones Oficiales</h4>
-                <div className="border-l-4 border-barranquilla-blue pl-3 py-1">
+                <div className="border-l-4 border-custom-orange pl-3 py-1">
                   <p className="text-gray-600">
                     Las delegaciones oficiales deben contactar directamente con la organización 
                     para coordinar su participación y aspectos logísticos especiales.
@@ -95,7 +103,7 @@ const Registration = () => {
               </div>
             </div>
             
-            <div className="bg-barranquilla-yellow/10 p-4 rounded-lg mt-6">
+            <div className="bg-custom-pink/10 p-4 rounded-lg mt-6">
               <p className="text-sm text-gray-600">
                 <strong>Nota:</strong> El registro formal estará disponible a través de este sitio web 
                 a partir de enero de 2025. Toda la información necesaria será publicada en esta sección.

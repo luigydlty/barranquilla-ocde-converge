@@ -1,5 +1,5 @@
 
-import { MapPin, Phone, Hotel, Airplane } from 'lucide-react';
+import { MapPin, Phone, Hotel, Airplay } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Venue = () => {
@@ -31,7 +31,7 @@ const Venue = () => {
             </TabsTrigger>
             <TabsTrigger value="transport" className="data-[state=active]:bg-barranquilla-blue data-[state=active]:text-white">
               <div className="flex flex-col items-center gap-1">
-                <Airplane className="h-4 w-4" />
+                <Airplay className="h-4 w-4" />
                 <span>Transporte</span>
               </div>
             </TabsTrigger>

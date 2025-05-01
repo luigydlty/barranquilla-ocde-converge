@@ -51,7 +51,7 @@ const Countdown = ({ targetDate }: CountdownProps) => {
           return (
             <div 
               key={label} 
-              className="bg-white/10 backdrop-blur-sm rounded-lg p-2 md:p-4"
+              className="bg-custom-darkPurple/30 backdrop-blur-sm rounded-lg p-2 md:p-4 border border-white/10"
             >
               <div className="text-custom-orange text-2xl md:text-3xl font-bold">
                 {value}

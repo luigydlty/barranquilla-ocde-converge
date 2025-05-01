@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24"
       style={{
-        backgroundImage: 'linear-gradient(rgba(73, 34, 89, 0.8), rgba(73, 34, 89, 0.8))',
+        backgroundImage: 'linear-gradient(rgba(73, 34, 89, 0.9), rgba(73, 34, 89, 0.9))',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
@@ -21,27 +21,27 @@ const Hero = () => {
         />
       </div>
       
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 my-8 pb-12">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 mt-8 animate-fade-in">
             Foro de Desarrollo Local de la OCDE
           </h1>
           
-          <div className="mb-8 text-white/90 text-lg md:text-xl font-medium">
+          <div className="mb-8 text-white text-lg md:text-xl font-medium">
             Barranquilla, Colombia | 8-11 Julio 2025
           </div>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-up">
+          <p className="text-xl md:text-2xl text-white mb-10 animate-fade-up">
             El evento internacional que reúne a líderes para impulsar el desarrollo local sostenible
           </p>
           
-          <div className="flex justify-center">
-            <Button size="lg" className="bg-custom-orange hover:bg-custom-orange/90 text-white">
+          <div className="flex justify-center mb-12">
+            <Button size="lg" className="bg-custom-orange hover:bg-custom-orange/90 text-white font-bold text-lg px-8 py-6">
               Regístrate al Evento Aquí
             </Button>
           </div>
           
-          <div className="mt-10">
+          <div className="mt-10 mb-16">
             <Countdown targetDate="2025-07-08T09:00:00" />
           </div>
         </div>
@@ -49,8 +49,8 @@ const Hero = () => {
       
       {/* Decorative wave effect at bottom with increased height */}
       <div className="absolute bottom-0 left-0 w-full">
-        <svg viewBox="0 0 1440 240" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-          <path d="M0 240L60 220C120 200 240 160 360 140C480 120 600 120 720 130C840 140 960 160 1080 170C1200 180 1320 180 1380 180L1440 180V240H1380C1320 240 1200 240 1080 240C960 240 840 240 720 240C600 240 480 240 360 240C240 240 120 240 60 240H0V240Z" fill="white"/>
+        <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
+          <path d="M0 320L60 293.3C120 266.7 240 213.3 360 186.7C480 160 600 160 720 173.3C840 186.7 960 213.3 1080 226.7C1200 240 1320 240 1380 240L1440 240V320H1380C1320 320 1200 320 1080 320C960 320 840 320 720 320C600 320 480 320 360 320C240 320 120 320 60 320H0V320Z" fill="white"/>
         </svg>
       </div>
     </section>

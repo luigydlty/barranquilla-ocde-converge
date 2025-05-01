@@ -32,12 +32,12 @@ const NavBar = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-custom-darkPurple/95 shadow-md py-2' : 'bg-custom-darkPurple/80 py-4 backdrop-blur-sm'}`}>
       <div className="container-custom">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="#" className="flex items-center space-x-2">
-              <span className={`text-xl font-bold ${isScrolled ? 'text-custom-darkPurple' : 'text-white'}`}>
+              <span className="text-xl font-bold text-white">
                 OCDE 2025
               </span>
             </a>
@@ -49,14 +49,12 @@ const NavBar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors hover:bg-custom-purple/10 ${
-                  isScrolled ? 'text-gray-700 hover:text-custom-purple' : 'text-white hover:text-custom-orange'
-                }`}
+                className="px-3 py-2 rounded-md text-sm font-medium transition-colors text-white hover:bg-custom-purple/30 hover:text-custom-orange"
               >
                 {item.name}
               </a>
             ))}
-            <Button className="ml-4 bg-custom-orange hover:bg-custom-orange/90 text-white">
+            <Button className="ml-4 bg-custom-orange hover:bg-custom-orange/80 text-white font-semibold">
               Regístrate Ahora
             </Button>
           </nav>
@@ -65,7 +63,7 @@ const NavBar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`p-2 rounded-md focus:outline-none ${isScrolled ? 'text-gray-700' : 'text-white'}`}
+              className="p-2 rounded-md focus:outline-none text-white"
             >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -80,20 +78,20 @@ const NavBar = () => {
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
         <div className="lg:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-custom-darkPurple shadow-lg">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center gap-2 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-custom-purple/10 hover:text-custom-purple"
+                className="flex items-center gap-2 px-3 py-2 rounded-md text-base font-medium text-white hover:bg-custom-purple/30 hover:text-custom-orange"
               >
                 {item.icon}
                 {item.name}
               </a>
             ))}
             <div className="px-3 py-2">
-              <Button className="w-full bg-custom-orange hover:bg-custom-orange/90 text-white">
+              <Button className="w-full bg-custom-orange hover:bg-custom-orange/80 text-white font-semibold">
                 Regístrate Ahora
               </Button>
             </div>

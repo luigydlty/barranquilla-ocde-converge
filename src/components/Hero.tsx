@@ -10,9 +10,9 @@ const Hero = () => {
         <img src="/lovable-uploads/fedc6e21-dd9b-45fb-bb0c-847feb94796e.png" alt="Vista aérea de Barranquilla" className="w-full h-full object-cover" />
       </div>
       
-      <div className="container-custom relative z-10 my-8 pb-12">
+      <div className="container-custom relative z-10 pb-12 mx-0 my-[17px]">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 mt-8 animate-fade-in">Foro de Desarrollo Local de la OCDE 2025</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 mt-8 animate-fade-in my-[16px] lg:text-6xl">Foro de Desarrollo Local de la OCDE 2025</h1>
           
           
           

@@ -1,10 +1,7 @@
-
 import { MapPin, Phone, Hotel, Airplay } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 const Venue = () => {
-  return (
-    <section id="venue" className="section-padding bg-white">
+  return <section id="venue" className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-custom-purple">
@@ -74,7 +71,7 @@ const Venue = () => {
                       <p className="text-gray-500 mb-4">Sede de la cena de conferencia el 10 de julio.</p>
                       <div className="flex items-start gap-2">
                         <MapPin className="h-5 w-5 text-custom-orange mt-0.5" />
-                        <span>Dirección por confirmar</span>
+                        <span>Malecón Puerta de Oro</span>
                       </div>
                     </div>
                   </div>
@@ -195,8 +192,6 @@ const Venue = () => {
           </TabsContent>
         </Tabs>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Venue;

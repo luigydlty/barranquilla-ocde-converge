@@ -1,16 +1,10 @@
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 const Agenda = () => {
-  return (
-    <section id="agenda" className="section-padding bg-custom-darkPurple/5">
+  return <section id="agenda" className="section-padding bg-custom-darkPurple/5">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-custom-darkPurple">Programa / Agenda</h2>
-          <p className="text-gray-600">
-            Una serie de actividades diseñadas para inspirar, conectar y promover el desarrollo local.
-            El programa se irá actualizando con más detalles a medida que se acerque el evento.
-          </p>
+          <p className="text-gray-600">Una serie de actividades diseñadas para inspirar, conectar y promover el desarrollo local.</p>
         </div>
 
         <Tabs defaultValue="day1" className="max-w-4xl mx-auto">
@@ -169,8 +163,6 @@ const Agenda = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Agenda;

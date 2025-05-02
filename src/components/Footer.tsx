@@ -1,9 +1,6 @@
-
 import { MapPin, Phone, Mail } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-custom-darkPurple text-white">
+  return <footer className="bg-custom-darkPurple text-white">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -83,9 +80,7 @@ const Footer = () => {
                 <span className="font-bold text-custom-darkPurple">OCDE</span>
               </div>
             </div>
-            <p className="mt-4 text-sm text-white/70">
-              * Los logos de los organizadores se incluirán en la versión final del sitio.
-            </p>
+            
           </div>
         </div>
         
@@ -101,8 +96,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

@@ -102,8 +102,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium">Correo Electrónico</h4>
-                    <p className="text-gray-600">ocde2025@barranquilla.gov.co</p>
-                    <p className="text-gray-600">prensa.ocde2025@barranquilla.gov.co (Para prensa)</p>
+                    <p className="text-gray-600 break-words">ocde2025@barranquilla.gov.co</p>
+                    <p className="text-gray-600 break-words">prensa.ocde2025@barranquilla.gov.co (Para prensa)</p>
                   </div>
                 </div>
                 
@@ -114,7 +114,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium">Teléfono</h4>
                     <p className="text-gray-600">+57 5 3399999 ext. 1234</p>
-                    <p className="text-gray-600">De lunes a viernes, 8:00 AM - 5:00 PM (Hora de Colombia)</p>
+                    <p className="text-gray-600 text-sm">De lunes a viernes, 8:00 AM - 5:00 PM (Hora de Colombia)</p>
                   </div>
                 </div>
               </div>

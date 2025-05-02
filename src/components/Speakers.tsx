@@ -135,7 +135,7 @@ const Speakers = () => {
 
         {/* Speaker Detail Modal */}
         <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-          <DialogContent className="sm:max-w-2xl">
+          <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto">
             {selectedSpeaker && (
               <>
                 <DialogHeader>
@@ -162,7 +162,7 @@ const Speakers = () => {
                       <div className="border-l-4 border-custom-pink pl-4 py-2">
                         <p className="text-gray-700">{selectedSpeaker.bio}</p>
                       </div>
-                      <div className="pt-2">
+                      <div className="pt-2 pb-4">
                         <h4 className="font-semibold mb-2 text-custom-darkPurple">Temas que abordará:</h4>
                         <ul className="list-disc list-inside text-gray-700 space-y-1">
                           <li>Desarrollo económico local</li>

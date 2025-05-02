@@ -1,6 +1,8 @@
+
 import { Button } from '@/components/ui/button';
 import Countdown from '@/components/Countdown';
 import { useLanguage } from '@/context/LanguageContext';
+
 const Hero = () => {
   const {
     t

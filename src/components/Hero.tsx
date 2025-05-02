@@ -16,9 +16,7 @@ const Hero = () => {
           
           
           
-          <p className="text-xl md:text-2xl mb-10 animate-fade-up text-slate-100 font-bold">
-            El evento internacional que reúne a líderes para impulsar el desarrollo local sostenible
-          </p>
+          <p className="text-xl mb-10 animate-fade-up text-slate-100 font-bold md:text-3xl">Inspiraciones globales, transformaciones locales</p>
           
           <div className="flex justify-center mb-12">
             <Button size="lg" className="bg-custom-orange hover:bg-custom-orange/90 text-white font-bold text-lg px-8 py-6">

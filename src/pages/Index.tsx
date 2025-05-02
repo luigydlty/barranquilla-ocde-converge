@@ -9,21 +9,24 @@ import MediaGallery from "@/components/MediaGallery";
 import Registration from "@/components/Registration";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <NavBar />
-      <Hero />
-      <About />
-      <Agenda />
-      <Speakers />
-      <Venue />
-      <MediaGallery />
-      <Registration />
-      <Contact />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen">
+        <NavBar />
+        <Hero />
+        <About />
+        <Agenda />
+        <Speakers />
+        <Venue />
+        <MediaGallery />
+        <Registration />
+        <Contact />
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 };
 

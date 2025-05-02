@@ -1,8 +1,11 @@
 
 import { Button } from '@/components/ui/button';
 import Countdown from '@/components/Countdown';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section 
       id="home" 
@@ -20,16 +23,20 @@ const Hero = () => {
       <div className="container-custom relative z-10 flex-1 flex flex-col justify-center items-center">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-8 mt-16 animate-fade-in my-[16px] lg:text-6xl">
-            Foro de Desarrollo Local de la OCDE 2025
+            {t("homeTitle")}
           </h1>
           
-          <p className="text-xl mb-10 animate-fade-up text-white font-bold md:text-3xl">
-            Inspiraciones globales, transformaciones locales
+          <p className="text-xl mb-4 animate-fade-up text-white font-bold md:text-3xl">
+            {t("homeSubtitle")}
+          </p>
+          
+          <p className="text-lg mb-10 animate-fade-up text-white md:text-xl">
+            {t("dateLocation")}
           </p>
           
           <div className="flex justify-center mb-12">
             <Button size="lg" className="bg-custom-orange hover:bg-custom-orange/90 text-white font-bold text-lg px-8 py-6">
-              Regístrate al Evento Aquí
+              {t("register")}
             </Button>
           </div>
           

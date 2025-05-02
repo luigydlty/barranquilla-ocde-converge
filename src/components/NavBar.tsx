@@ -2,10 +2,13 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Calendar, Info, Users, MapPin, Mail, Pencil, Home, Image } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useLanguage } from '@/context/LanguageContext';
 
 const NavBar = () => {
   const [isPastHero, setIsPastHero] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,14 +32,14 @@ const NavBar = () => {
   }, []);
 
   const navItems = [
-    { name: "Inicio", href: "#home", icon: <Home className="h-5 w-5" /> },
-    { name: "Sobre el Foro", href: "#about", icon: <Info className="h-5 w-5" /> },
-    { name: "Programa", href: "#agenda", icon: <Calendar className="h-5 w-5" /> },
-    { name: "Ponentes", href: "#speakers", icon: <Users className="h-5 w-5" /> },
-    { name: "Información Práctica", href: "#venue", icon: <MapPin className="h-5 w-5" /> },
-    { name: "Galería", href: "#media", icon: <Image className="h-5 w-5" /> },
-    { name: "Registro", href: "#registration", icon: <Pencil className="h-5 w-5" /> },
-    { name: "Contacto", href: "#contact", icon: <Mail className="h-5 w-5" /> }
+    { name: t("home"), href: "#home", icon: <Home className="h-5 w-5" /> },
+    { name: t("about"), href: "#about", icon: <Info className="h-5 w-5" /> },
+    { name: t("program"), href: "#agenda", icon: <Calendar className="h-5 w-5" /> },
+    { name: t("speakers"), href: "#speakers", icon: <Users className="h-5 w-5" /> },
+    { name: t("venue"), href: "#venue", icon: <MapPin className="h-5 w-5" /> },
+    { name: t("gallery"), href: "#media", icon: <Image className="h-5 w-5" /> },
+    { name: t("registration"), href: "#registration", icon: <Pencil className="h-5 w-5" /> },
+    { name: t("contact"), href: "#contact", icon: <Mail className="h-5 w-5" /> }
   ];
 
   return (
@@ -67,12 +70,14 @@ const NavBar = () => {
               </a>
             ))}
             <Button className="ml-4 bg-custom-orange hover:bg-custom-orange/80 text-white font-semibold">
-              Regístrate Ahora
+              {t("registerNow")}
             </Button>
+            <LanguageSwitcher />
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden">
+          <div className="lg:hidden flex items-center gap-2">
+            <LanguageSwitcher />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 rounded-md focus:outline-none text-white"
@@ -104,7 +109,7 @@ const NavBar = () => {
             ))}
             <div className="px-3 py-2">
               <Button className="w-full bg-custom-orange hover:bg-custom-orange/80 text-white font-semibold">
-                Regístrate Ahora
+                {t("registerNow")}
               </Button>
             </div>
           </div>

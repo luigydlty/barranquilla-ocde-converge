@@ -1,32 +1,22 @@
-
 import { Button } from "@/components/ui/button";
 import { Calendar, Users } from "lucide-react";
-
 const Registration = () => {
-  return (
-    <section id="registration" className="section-padding relative overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0" 
-        style={{
-          backgroundImage: 'linear-gradient(rgba(166, 88, 161, 0.9), rgba(166, 88, 161, 0.8))',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+  return <section id="registration" className="section-padding relative overflow-hidden">
+      <div className="absolute inset-0 z-0" style={{
+      backgroundImage: 'linear-gradient(rgba(166, 88, 161, 0.9), rgba(166, 88, 161, 0.8))',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }} />
       
       <div className="absolute inset-0 z-0 opacity-20">
-        <img 
-          src="/lovable-uploads/fedc6e21-dd9b-45fb-bb0c-847feb94796e.png" 
-          alt="Vista aérea de Barranquilla" 
-          className="w-full h-full object-cover" 
-        />
+        <img src="/lovable-uploads/fedc6e21-dd9b-45fb-bb0c-847feb94796e.png" alt="Vista aérea de Barranquilla" className="w-full h-full object-cover" />
       </div>
       
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Registro</h2>
-            <p className="text-white/90 mb-6 text-lg">
+            <p className="text-white/90 mb-6 text-lg font-bold">
               El registro para el Foro de Desarrollo Local de la OCDE Barranquilla 2025 
               se abrirá próximamente. Regístrese para asegurar su participación en este 
               importante evento internacional.
@@ -38,9 +28,9 @@ const Registration = () => {
                   <Calendar className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Fechas importantes</h3>
-                  <p className="opacity-80 text-sm">Apertura de registro: Enero 2025</p>
-                  <p className="opacity-80 text-sm">Cierre de registro: Junio 2025</p>
+                  <h3 className="font-extrabold">Fechas importantes</h3>
+                  <p className="opacity-80 text-sm font-extrabold">Apertura de registro: Enero 2025</p>
+                  <p className="opacity-80 text-sm font-extrabold">Cierre de registro: Junio 2025</p>
                 </div>
               </div>
               
@@ -49,14 +39,14 @@ const Registration = () => {
                   <Users className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Participantes</h3>
-                  <p className="opacity-80 text-sm">Plazas limitadas para asegurar una experiencia de calidad</p>
+                  <h3 className="font-extrabold">Participantes</h3>
+                  <p className="opacity-80 text-sm font-extrabold">Plazas limitadas para asegurar una experiencia de calidad</p>
                 </div>
               </div>
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-5 text-white/90 mb-6">
-              <p>
+              <p className="font-extrabold">
                 Para consultas sobre el proceso de registro o para manifestar su interés en 
                 participar, puede contactar con el equipo organizador a través del formulario 
                 de contacto.
@@ -112,8 +102,6 @@ const Registration = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Registration;

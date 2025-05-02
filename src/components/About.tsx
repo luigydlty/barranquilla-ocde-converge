@@ -1,9 +1,6 @@
-
 import { Calendar, MapPin, Users, FileText } from 'lucide-react';
-
 const About = () => {
-  return (
-    <section id="about" className="section-padding bg-gradient-to-b from-white to-custom-pink/10">
+  return <section id="about" className="section-padding bg-gradient-to-b from-white to-custom-pink/10">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-custom-darkPurple">
@@ -17,7 +14,7 @@ const About = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div className="bg-white rounded-xl p-8 shadow-sm border border-custom-pink/20">
-            <h3 className="text-xl font-semibold mb-4 text-custom-purple">
+            <h3 className="text-xl mb-4 text-custom-purple font-extrabold">
               Importancia del Evento
             </h3>
             <p className="text-gray-600 mb-4">
@@ -33,7 +30,7 @@ const About = () => {
           </div>
           
           <div className="bg-white rounded-xl p-8 shadow-sm border border-custom-pink/20">
-            <h3 className="text-xl font-semibold mb-4 text-custom-purple">
+            <h3 className="text-xl mb-4 text-custom-purple font-extrabold">
               Temas Principales
             </h3>
             <ul className="space-y-3 text-gray-600">
@@ -96,8 +93,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

@@ -36,7 +36,7 @@ const Venue = () => {
           
           <TabsContent value="venue" className="mt-0">
             <div className="bg-gray-50 rounded-lg shadow-sm p-6">
-              <h3 className="text-xl font-semibold mb-4 text-custom-purple">
+              <h3 className="text-xl mb-4 text-custom-purple font-extrabold">
                 Sedes del Evento
               </h3>
               
@@ -82,7 +82,7 @@ const Venue = () => {
           
           <TabsContent value="accommodation" className="mt-0">
             <div className="bg-gray-50 rounded-lg shadow-sm p-6">
-              <h3 className="text-xl font-semibold mb-4 text-custom-purple">
+              <h3 className="text-xl mb-4 text-custom-purple font-extrabold">
                 Sugerencias de Alojamiento
               </h3>
               
@@ -147,7 +147,7 @@ const Venue = () => {
           
           <TabsContent value="transport" className="mt-0">
             <div className="bg-gray-50 rounded-lg shadow-sm p-6">
-              <h3 className="text-xl font-semibold mb-4 text-custom-purple">
+              <h3 className="text-xl mb-4 text-custom-purple font-extrabold">
                 Información de Transporte
               </h3>
               

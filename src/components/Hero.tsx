@@ -12,11 +12,9 @@ const Hero = () => {
       
       <div className="container-custom relative z-10 my-8 pb-12">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 mt-8 animate-fade-in">
-            Foro de Desarrollo Local de la OCDE
-          </h1>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 mt-8 animate-fade-in">Foro de Desarrollo Local de la OCDE 2025</h1>
           
-          <div className="mb-8 text-white text-lg md:text-xl font-medium">Barranquilla 8-11 Julio 2025</div>
+          
           
           <p className="text-xl md:text-2xl mb-10 animate-fade-up text-slate-100 font-bold">
             El evento internacional que reúne a líderes para impulsar el desarrollo local sostenible

@@ -1,21 +1,15 @@
-
 import { Button } from '@/components/ui/button';
 import Countdown from '@/components/Countdown';
 import { useLanguage } from '@/context/LanguageContext';
-
 const Hero = () => {
-  const { t } = useLanguage();
-
-  return (
-    <section 
-      id="home" 
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-28 pb-32" 
-      style={{
-        backgroundImage: 'linear-gradient(rgba(73, 34, 89, 0.9), rgba(73, 34, 89, 0.9))',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}
-    >
+  const {
+    t
+  } = useLanguage();
+  return <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-28 pb-32" style={{
+    backgroundImage: 'linear-gradient(rgba(73, 34, 89, 0.9), rgba(73, 34, 89, 0.9))',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }}>
       <div className="absolute inset-0 z-0 opacity-30">
         <img src="/lovable-uploads/fedc6e21-dd9b-45fb-bb0c-847feb94796e.png" alt="Vista aérea de Barranquilla" className="w-full h-full object-cover" />
       </div>
@@ -30,7 +24,7 @@ const Hero = () => {
             {t("homeSubtitle")}
           </p>
           
-          <p className="text-lg mb-10 animate-fade-up text-white md:text-xl">
+          <p className="text-lg mb-10 animate-fade-up md:text-xl text-slate-50 font-extrabold">
             {t("dateLocation")}
           </p>
           
@@ -52,8 +46,6 @@ const Hero = () => {
           <path d="M0 320L60 293.3C120 266.7 240 213.3 360 186.7C480 160 600 160 720 173.3C840 186.7 960 213.3 1080 226.7C1200 240 1320 240 1380 240L1440 240V320H1380C1320 320 1200 320 1080 320C960 320 840 320 720 320C600 320 480 320 360 320C240 320 120 320 60 320H0V320Z" fill="white" />
         </svg>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

@@ -4,19 +4,27 @@ import { Menu, X, Calendar, Info, Users, MapPin, Mail, Pencil, Home, Image } fro
 import { Button } from '@/components/ui/button';
 
 const NavBar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isPastHero, setIsPastHero] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+      const heroSection = document.getElementById('home');
+      if (heroSection) {
+        const heroBottom = heroSection.getBoundingClientRect().bottom;
+        // Check if we've scrolled past the hero section
+        if (heroBottom <= 0) {
+          setIsPastHero(true);
+        } else {
+          setIsPastHero(false);
+        }
       }
     };
 
     window.addEventListener('scroll', handleScroll);
+    // Initial check on mount
+    handleScroll();
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -32,7 +40,11 @@ const NavBar = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-custom-darkPurple/95 shadow-md py-2' : 'bg-custom-darkPurple/80 py-4 backdrop-blur-sm'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${
+      isPastHero 
+        ? 'bg-custom-darkPurple/95 shadow-md py-2' 
+        : 'bg-transparent py-4'
+    }`}>
       <div className="container-custom">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -49,7 +61,7 @@ const NavBar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="px-3 py-2 rounded-md text-sm font-medium transition-colors text-white hover:bg-custom-purple/30 hover:text-custom-orange"
+                className="px-3 py-2 rounded-md text-sm font-medium transition-colors text-white hover:bg-custom-purple/40 hover:text-custom-orange"
               >
                 {item.name}
               </a>
@@ -78,13 +90,13 @@ const NavBar = () => {
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
         <div className="lg:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-custom-darkPurple shadow-lg">
+          <div className={`px-2 pt-2 pb-3 space-y-1 ${isPastHero ? 'bg-custom-darkPurple' : 'bg-custom-darkPurple/90'} shadow-lg`}>
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center gap-2 px-3 py-2 rounded-md text-base font-medium text-white hover:bg-custom-purple/30 hover:text-custom-orange"
+                className="flex items-center gap-2 px-3 py-2 rounded-md text-base font-medium text-white hover:bg-custom-purple/40 hover:text-custom-orange"
               >
                 {item.icon}
                 {item.name}

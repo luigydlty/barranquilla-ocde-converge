@@ -18,7 +18,7 @@ const Hero = () => {
           
           <div className="mb-8 text-white text-lg md:text-xl font-medium">Barranquilla 8-11 Julio 2025</div>
           
-          <p className="text-xl md:text-2xl text-white mb-10 animate-fade-up">
+          <p className="text-xl md:text-2xl mb-10 animate-fade-up text-slate-100 font-bold">
             El evento internacional que reúne a líderes para impulsar el desarrollo local sostenible
           </p>
           

@@ -94,10 +94,12 @@
   
   html {
     scroll-behavior: smooth;
+    font-size: 16px;
   }
 
   body {
     @apply bg-background text-foreground font-montserrat;
+    overflow-x: hidden;
   }
 }
 
@@ -107,10 +109,40 @@
   }
   
   .section-padding {
-    @apply py-16 px-4 md:py-24 md:px-6 lg:px-8;
+    @apply py-12 px-4 md:py-16 lg:py-24 md:px-6 lg:px-8;
   }
   
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Mobile-first utility classes */
+  .text-wrap {
+    @apply break-words;
+  }
+  
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add responsive spacing utilities */
+@layer utilities {
+  .responsive-p {
+    @apply p-4 md:p-6 lg:p-8;
+  }
+  
+  .responsive-m {
+    @apply m-4 md:m-6 lg:m-8;
+  }
+  
+  .responsive-gap {
+    @apply gap-3 md:gap-4 lg:gap-6;
   }
 }

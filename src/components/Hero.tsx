@@ -7,7 +7,7 @@ const Hero = () => {
   const {
     t
   } = useLanguage();
-  return <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-28 pb-32" style={{
+  return <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 md:pt-28 pb-24 md:pb-32" style={{
     backgroundImage: 'linear-gradient(rgba(73, 34, 89, 0.9), rgba(73, 34, 89, 0.9))',
     backgroundSize: 'cover',
     backgroundPosition: 'center'
@@ -16,27 +16,27 @@ const Hero = () => {
         <img src="/lovable-uploads/fedc6e21-dd9b-45fb-bb0c-847feb94796e.png" alt="Vista aérea de Barranquilla" className="w-full h-full object-cover" />
       </div>
       
-      <div className="container-custom relative z-10 flex-1 flex flex-col justify-center items-center">
+      <div className="container-custom relative z-10 flex-1 flex flex-col justify-center items-center px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-8 mt-16 animate-fade-in my-[16px] lg:text-6xl">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-6 md:mb-8 mt-12 md:mt-16 animate-fade-in lg:text-6xl">
             {t("homeTitle")}
           </h1>
           
-          <p className="text-xl mb-4 animate-fade-up text-white font-bold md:text-3xl">
+          <p className="text-lg sm:text-xl md:text-3xl mb-3 md:mb-4 animate-fade-up text-white font-bold">
             {t("homeSubtitle")}
           </p>
           
-          <p className="text-lg mb-10 animate-fade-up md:text-xl text-slate-50 font-extrabold">
+          <p className="text-base sm:text-lg mb-8 md:mb-10 animate-fade-up md:text-xl text-slate-50 font-extrabold">
             {t("dateLocation")}
           </p>
           
-          <div className="flex justify-center mb-12">
-            <Button size="lg" className="bg-custom-orange hover:bg-custom-orange/90 text-white font-bold text-lg px-8 py-6">
+          <div className="flex justify-center mb-8 md:mb-12">
+            <Button size="lg" className="bg-custom-orange hover:bg-custom-orange/90 text-white font-bold text-base md:text-lg px-6 py-5 md:px-8 md:py-6">
               {t("register")}
             </Button>
           </div>
           
-          <div className="mt-10 mb-16">
+          <div className="mt-8 md:mt-10 mb-12 md:mb-16">
             <Countdown targetDate="2025-07-08T09:00:00" />
           </div>
         </div>

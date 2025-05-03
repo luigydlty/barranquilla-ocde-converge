@@ -1,3 +1,4 @@
+
 import { MapPin, Phone, Hotel, Airplay } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const Venue = () => {
@@ -100,7 +101,7 @@ const Venue = () => {
                       <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
                         Contacto
                       </div>
-                      <span className="mt-0.5">reservas.barranquilla@movichhotels.com / WhatsApp: +57 310 123 4567</span>
+                      <span className="mt-0.5 break-words">reservas.barranquilla@movichhotels.com / WhatsApp: +57 310 123 4567</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
@@ -124,7 +125,7 @@ const Venue = () => {
                       <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
                         Contacto
                       </div>
-                      <span className="mt-0.5">reservas.barranquilla@ihg.com / WhatsApp: +57 310 987 6543</span>
+                      <span className="mt-0.5 break-words">reservas.barranquilla@ihg.com / WhatsApp: +57 310 987 6543</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">

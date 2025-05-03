@@ -1,6 +1,7 @@
 
 import { MapPin, Phone, Hotel, Airplay } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 const Venue = () => {
   return <section id="venue" className="section-padding bg-white">
       <div className="container-custom">
@@ -91,23 +92,23 @@ const Venue = () => {
                 <div className="bg-white p-5 rounded-lg shadow-sm">
                   <h4 className="font-bold text-lg mb-3">Hotel Movich</h4>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
+                    <li className="flex flex-col sm:flex-row sm:items-start gap-2">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm min-w-fit">
                         Código de bloqueo
                       </div>
-                      <span className="mt-0.5">OCDE 2025</span>
+                      <span className="break-words">OCDE 2025</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
+                    <li className="flex flex-col sm:flex-row sm:items-start gap-2">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm min-w-fit">
                         Contacto
                       </div>
-                      <span className="mt-0.5 break-words">reservas.barranquilla@movichhotels.com / WhatsApp: +57 310 123 4567</span>
+                      <span className="break-words">reservas.barranquilla@movichhotels.com / WhatsApp: +57 310 123 4567</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
+                    <li className="flex flex-col sm:flex-row sm:items-start gap-2">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm min-w-fit">
                         Precios
                       </div>
-                      <span className="mt-0.5">Desde $200 USD (sin IVA para extranjeros)</span>
+                      <span className="break-words">Desde $200 USD (sin IVA para extranjeros)</span>
                     </li>
                   </ul>
                 </div>
@@ -115,23 +116,23 @@ const Venue = () => {
                 <div className="bg-white p-5 rounded-lg shadow-sm">
                   <h4 className="font-bold text-lg mb-3">Hotel Crowne</h4>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
+                    <li className="flex flex-col sm:flex-row sm:items-start gap-2">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm min-w-fit">
                         Código de bloqueo
                       </div>
-                      <span className="mt-0.5">OCDE 2025</span>
+                      <span className="break-words">OCDE 2025</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
+                    <li className="flex flex-col sm:flex-row sm:items-start gap-2">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm min-w-fit">
                         Contacto
                       </div>
-                      <span className="mt-0.5 break-words">reservas.barranquilla@ihg.com / WhatsApp: +57 310 987 6543</span>
+                      <span className="break-words">reservas.barranquilla@ihg.com / WhatsApp: +57 310 987 6543</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm">
+                    <li className="flex flex-col sm:flex-row sm:items-start gap-2">
+                      <div className="bg-custom-purple/10 p-1 rounded text-custom-purple font-medium text-sm min-w-fit">
                         Precios
                       </div>
-                      <span className="mt-0.5">Desde $180 USD (sin IVA para extranjeros)</span>
+                      <span className="break-words">Desde $180 USD (sin IVA para extranjeros)</span>
                     </li>
                   </ul>
                 </div>

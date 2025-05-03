@@ -1,25 +1,29 @@
+
 import { Button } from "@/components/ui/button";
 import { Calendar, Users } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
+
 const Registration = () => {
-  return <section id="registration" className="section-padding relative overflow-hidden">
+  const { t } = useLanguage();
+  
+  return (
+    <section id="registration" className="section-padding relative overflow-hidden">
       <div className="absolute inset-0 z-0" style={{
-      backgroundImage: 'linear-gradient(rgba(166, 88, 161, 0.9), rgba(166, 88, 161, 0.8))',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center'
-    }} />
+        backgroundImage: 'linear-gradient(rgba(166, 88, 161, 0.9), rgba(166, 88, 161, 0.8))',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }} />
       
       <div className="absolute inset-0 z-0 opacity-20">
-        <img src="/lovable-uploads/fedc6e21-dd9b-45fb-bb0c-847feb94796e.png" alt="Vista aérea de Barranquilla" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/fedc6e21-dd9b-45fb-bb0c-847feb94796e.png" alt={t("aerialView")} className="w-full h-full object-cover" />
       </div>
       
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Registro</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">{t("registration")}</h2>
             <p className="text-white/90 mb-6 text-lg font-bold">
-              El registro para el Foro de Desarrollo Local de la OCDE Barranquilla 2025 
-              se abrirá próximamente. Regístrese para asegurar su participación en este 
-              importante evento internacional.
+              {t("registrationIntro")}
             </p>
             
             <div className="space-y-4 mb-8">
@@ -28,9 +32,9 @@ const Registration = () => {
                   <Calendar className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-extrabold">Fechas importantes</h3>
-                  <p className="opacity-80 text-sm font-extrabold">Apertura de registro: Enero 2025</p>
-                  <p className="opacity-80 text-sm font-extrabold">Cierre de registro: Junio 2025</p>
+                  <h3 className="font-extrabold">{t("importantDates")}</h3>
+                  <p className="opacity-80 text-sm font-extrabold">{t("registrationOpens")}</p>
+                  <p className="opacity-80 text-sm font-extrabold">{t("registrationCloses")}</p>
                 </div>
               </div>
               
@@ -39,55 +43,50 @@ const Registration = () => {
                   <Users className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-extrabold">Participantes</h3>
-                  <p className="opacity-80 text-sm font-extrabold">Plazas limitadas para asegurar una experiencia de calidad</p>
+                  <h3 className="font-extrabold">{t("participants")}</h3>
+                  <p className="opacity-80 text-sm font-extrabold">{t("limitedCapacity")}</p>
                 </div>
               </div>
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-5 text-white/90 mb-6">
               <p className="font-extrabold">
-                Para consultas sobre el proceso de registro o para manifestar su interés en 
-                participar, puede contactar con el equipo organizador a través del formulario 
-                de contacto.
+                {t("registrationContact")}
               </p>
             </div>
             
             <Button className="bg-custom-orange hover:bg-custom-orange/90 text-white">
-              Pre-registro / Expresar interés
+              {t("preRegistration")}
             </Button>
           </div>
           
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold mb-6 text-custom-purple">Información de Registro</h3>
+            <h3 className="text-xl font-bold mb-6 text-custom-purple">{t("registrationInfo")}</h3>
             
             <div className="space-y-6">
               <div>
-                <h4 className="font-semibold mb-2">Modalidades de Participación</h4>
+                <h4 className="font-semibold mb-2">{t("participationModes")}</h4>
                 <div className="border-l-4 border-custom-orange pl-3 py-1">
                   <p className="text-gray-600">
-                    El foro ofrece diferentes opciones de participación adaptadas a las necesidades de 
-                    los asistentes, incluyendo acceso a todas las sesiones o solo a eventos específicos.
+                    {t("participationModesDesc")}
                   </p>
                 </div>
               </div>
               
               <div>
-                <h4 className="font-semibold mb-2">Tarifas de Inscripción</h4>
+                <h4 className="font-semibold mb-2">{t("registrationFees")}</h4>
                 <div className="border-l-4 border-custom-orange pl-3 py-1">
                   <p className="text-gray-600">
-                    Las tarifas varían según el tipo de participante (representantes gubernamentales, 
-                    académicos, sector privado) y serán publicadas próximamente.
+                    {t("registrationFeesDesc")}
                   </p>
                 </div>
               </div>
               
               <div>
-                <h4 className="font-semibold mb-2">Delegaciones Oficiales</h4>
+                <h4 className="font-semibold mb-2">{t("officialDelegations")}</h4>
                 <div className="border-l-4 border-custom-orange pl-3 py-1">
                   <p className="text-gray-600">
-                    Las delegaciones oficiales deben contactar directamente con la organización 
-                    para coordinar su participación y aspectos logísticos especiales.
+                    {t("officialDelegationsDesc")}
                   </p>
                 </div>
               </div>
@@ -95,13 +94,14 @@ const Registration = () => {
             
             <div className="bg-custom-pink/10 p-4 rounded-lg mt-6">
               <p className="text-sm text-gray-600">
-                <strong>Nota:</strong> El registro formal estará disponible a través de este sitio web 
-                a partir de enero de 2025. Toda la información necesaria será publicada en esta sección.
+                <strong>{t("note")}:</strong> {t("registrationNote")}
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Registration;

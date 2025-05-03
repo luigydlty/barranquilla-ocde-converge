@@ -107,7 +107,101 @@ const translations: Translations = {
   structureOther: { 
     es: "Conversaciones, almuerzos y cena de conferencia", 
     en: "Conversations, lunches and conference dinner" 
-  }
+  },
+  
+  // Speakers Section
+  featuredSpeakers: { es: "Ponentes Destacados", en: "Featured Speakers" },
+  speakersDescription: {
+    es: "Conoce a los expertos que compartirán sus conocimientos y experiencias",
+    en: "Meet the experts who will share their knowledge and experiences"
+  },
+  speakerTopics: { es: "Temas que abordará", en: "Topics to be addressed" },
+
+  // Registration Section
+  registrationIntro: {
+    es: "El registro para el Foro de Desarrollo Local de la OCDE Barranquilla 2025 se abrirá próximamente. Regístrese para asegurar su participación en este importante evento internacional.",
+    en: "Registration for the OECD Local Development Forum Barranquilla 2025 will open soon. Register to ensure your participation in this important international event."
+  },
+  importantDates: { es: "Fechas importantes", en: "Important dates" },
+  registrationOpens: { es: "Apertura de registro: Enero 2025", en: "Registration opens: January 2025" },
+  registrationCloses: { es: "Cierre de registro: Junio 2025", en: "Registration closes: June 2025" },
+  participants: { es: "Participantes", en: "Participants" },
+  limitedCapacity: { es: "Plazas limitadas para asegurar una experiencia de calidad", en: "Limited capacity to ensure a quality experience" },
+  registrationContact: {
+    es: "Para consultas sobre el proceso de registro o para manifestar su interés en participar, puede contactar con el equipo organizador a través del formulario de contacto.",
+    en: "For inquiries about the registration process or to express your interest in participating, you can contact the organizing team through the contact form."
+  },
+  preRegistration: { es: "Pre-registro / Expresar interés", en: "Pre-registration / Express interest" },
+  registrationInfo: { es: "Información de Registro", en: "Registration Information" },
+  participationModes: { es: "Modalidades de Participación", en: "Participation Modes" },
+  participationModesDesc: {
+    es: "El foro ofrece diferentes opciones de participación adaptadas a las necesidades de los asistentes, incluyendo acceso a todas las sesiones o solo a eventos específicos.",
+    en: "The forum offers different participation options adapted to the needs of attendees, including access to all sessions or only to specific events."
+  },
+  registrationFees: { es: "Tarifas de Inscripción", en: "Registration Fees" },
+  registrationFeesDesc: {
+    es: "Las tarifas varían según el tipo de participante (representantes gubernamentales, académicos, sector privado) y serán publicadas próximamente.",
+    en: "Fees vary according to the type of participant (government representatives, academics, private sector) and will be published soon."
+  },
+  officialDelegations: { es: "Delegaciones Oficiales", en: "Official Delegations" },
+  officialDelegationsDesc: {
+    es: "Las delegaciones oficiales deben contactar directamente con la organización para coordinar su participación y aspectos logísticos especiales.",
+    en: "Official delegations should contact the organization directly to coordinate their participation and special logistical aspects."
+  },
+  note: { es: "Nota", en: "Note" },
+  registrationNote: {
+    es: "El registro formal estará disponible a través de este sitio web a partir de enero de 2025. Toda la información necesaria será publicada en esta sección.",
+    en: "Formal registration will be available through this website starting in January 2025. All necessary information will be published in this section."
+  },
+  
+  // Contact Section
+  contactDesc: {
+    es: "Para consultas relacionadas con el Foro de Desarrollo Local de la OCDE Barranquilla 2025, por favor utilice el formulario a continuación o contáctenos directamente.",
+    en: "For inquiries related to the OECD Local Development Forum Barranquilla 2025, please use the form below or contact us directly."
+  },
+  name: { es: "Nombre", en: "Name" },
+  yourName: { es: "Su nombre", en: "Your name" },
+  email: { es: "Correo Electrónico", en: "Email" },
+  yourEmail: { es: "Su correo electrónico", en: "Your email" },
+  organization: { es: "Organización", en: "Organization" },
+  yourOrganization: { es: "Su organización o institución", en: "Your organization or institution" },
+  subject: { es: "Asunto", en: "Subject" },
+  messageSubject: { es: "Asunto de su mensaje", en: "Subject of your message" },
+  message: { es: "Mensaje", en: "Message" },
+  writeMessage: { es: "Escriba su mensaje aquí", en: "Write your message here" },
+  sendMessage: { es: "Enviar Mensaje", en: "Send Message" },
+  contactInfo: { es: "Información de Contacto", en: "Contact Information" },
+  pressEmail: { es: "prensa.ocde2025@barranquilla.gov.co (Para prensa)", en: "prensa.ocde2025@barranquilla.gov.co (For press)" },
+  phone: { es: "Teléfono", en: "Phone" },
+  officeHours: { es: "De lunes a viernes, 8:00 AM - 5:00 PM (Hora de Colombia)", en: "Monday to Friday, 8:00 AM - 5:00 PM (Colombia Time)" },
+  faq: { es: "Preguntas Frecuentes", en: "Frequently Asked Questions" },
+  faqRegistration: { es: "¿Cuál es el plazo para registrarse?", en: "What is the deadline to register?" },
+  faqRegistrationAnswer: {
+    es: "El registro estará abierto hasta junio de 2025, pero recomendamos hacerlo con anticipación ya que las plazas son limitadas.",
+    en: "Registration will be open until June 2025, but we recommend doing it in advance as places are limited."
+  },
+  faqSupport: { es: "¿Existe algún apoyo para la asistencia?", en: "Is there any support for attendance?" },
+  faqSupportAnswer: {
+    es: "Para información sobre posibles becas o apoyos para asistir al foro, por favor contacte directamente a través del correo electrónico proporcionado.",
+    en: "For information about possible scholarships or support to attend the forum, please contact directly through the provided email."
+  },
+  faqTranslation: { es: "¿Se proveerá traducción simultánea?", en: "Will simultaneous translation be provided?" },
+  faqTranslationAnswer: {
+    es: "Sí, las sesiones principales contarán con traducción simultánea en español, inglés y francés.",
+    en: "Yes, the main sessions will have simultaneous translation in Spanish, English and French."
+  },
+
+  // Footer
+  forumTitle: { es: "Foro de Desarrollo Local de la OCDE", en: "OECD Local Development Forum" },
+  quickLinks: { es: "Enlaces Rápidos", en: "Quick Links" },
+  cityHall: { es: "Alcaldía de Barranquilla", en: "Barranquilla City Hall" },
+  organizers: { es: "Organizadores", en: "Organizers" },
+  allRightsReserved: { es: "Todos los derechos reservados", en: "All rights reserved" },
+  privacyPolicy: { es: "Políticas de Privacidad", en: "Privacy Policy" },
+  termsOfUse: { es: "Términos de Uso", en: "Terms of Use" },
+  
+  // Additional translations
+  aerialView: { es: "Vista aérea de Barranquilla", en: "Aerial view of Barranquilla" }
 };
 
 type LanguageContextType = {

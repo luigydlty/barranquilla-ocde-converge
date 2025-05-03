@@ -1,13 +1,19 @@
+
 import { MapPin, Phone, Mail } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
+
 const Footer = () => {
-  return <footer className="bg-custom-darkPurple text-white">
+  const { t } = useLanguage();
+  
+  return (
+    <footer className="bg-custom-darkPurple text-white">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">OCDE Barranquilla 2025</h3>
             <p className="text-white/80 mb-4">
-              Foro de Desarrollo Local de la OCDE<br />
-              8-11 de julio de 2025<br />
+              {t("forumTitle")}<br />
+              {t("dateLocation")}<br />
               Barranquilla, Colombia
             </p>
             <div className="flex gap-4">
@@ -33,24 +39,24 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+            <h3 className="text-xl font-bold mb-4">{t("quickLinks")}</h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-white/80 hover:text-custom-orange transition-colors">Inicio</a></li>
-              <li><a href="#about" className="text-white/80 hover:text-custom-orange transition-colors">Sobre el Foro</a></li>
-              <li><a href="#agenda" className="text-white/80 hover:text-custom-orange transition-colors">Programa / Agenda</a></li>
-              <li><a href="#venue" className="text-white/80 hover:text-custom-orange transition-colors">Información Práctica</a></li>
-              <li><a href="#registration" className="text-white/80 hover:text-custom-orange transition-colors">Registro</a></li>
-              <li><a href="#contact" className="text-white/80 hover:text-custom-orange transition-colors">Contacto</a></li>
+              <li><a href="#home" className="text-white/80 hover:text-custom-orange transition-colors">{t("home")}</a></li>
+              <li><a href="#about" className="text-white/80 hover:text-custom-orange transition-colors">{t("about")}</a></li>
+              <li><a href="#agenda" className="text-white/80 hover:text-custom-orange transition-colors">{t("program")}</a></li>
+              <li><a href="#venue" className="text-white/80 hover:text-custom-orange transition-colors">{t("venue")}</a></li>
+              <li><a href="#registration" className="text-white/80 hover:text-custom-orange transition-colors">{t("registration")}</a></li>
+              <li><a href="#contact" className="text-white/80 hover:text-custom-orange transition-colors">{t("contact")}</a></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-4">Contacto</h3>
+            <h3 className="text-xl font-bold mb-4">{t("contact")}</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 text-custom-orange" />
                 <span className="text-white/80">
-                  Alcaldía de Barranquilla<br />
+                  {t("cityHall")}<br />
                   Calle 34 # 43-31<br />
                   Barranquilla, Colombia
                 </span>
@@ -71,10 +77,10 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-4">Organizadores</h3>
+            <h3 className="text-xl font-bold mb-4">{t("organizers")}</h3>
             <div className="flex flex-col space-y-4">
               <div className="bg-white rounded-lg p-4 flex items-center justify-center h-16">
-                <span className="font-bold text-custom-darkPurple">Alcaldía de Barranquilla</span>
+                <span className="font-bold text-custom-darkPurple">{t("cityHall")}</span>
               </div>
               <div className="bg-white rounded-lg p-4 flex items-center justify-center h-16">
                 <span className="font-bold text-custom-darkPurple">OCDE</span>
@@ -87,15 +93,17 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm">
-              © 2025 Foro de Desarrollo Local de la OCDE Barranquilla. Todos los derechos reservados.
+              © 2025 {t("forumTitle")}. {t("allRightsReserved")}.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
-              <a href="#" className="text-white/60 hover:text-custom-orange text-sm">Políticas de Privacidad</a>
-              <a href="#" className="text-white/60 hover:text-custom-orange text-sm">Términos de Uso</a>
+              <a href="#" className="text-white/60 hover:text-custom-orange text-sm">{t("privacyPolicy")}</a>
+              <a href="#" className="text-white/60 hover:text-custom-orange text-sm">{t("termsOfUse")}</a>
             </div>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
